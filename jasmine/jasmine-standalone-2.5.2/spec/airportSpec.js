@@ -13,6 +13,11 @@ describe('Airport', function(){
       airport.land(plane);
       expect(airport.planes()).toEqual([plane])
     });
+
+    it('can take a plane off', function(){
+      airport.takeOff(plane);
+      expect(airport.planes()).toEqual([])
+    });
   });
 
   describe('has a capacity', function(){

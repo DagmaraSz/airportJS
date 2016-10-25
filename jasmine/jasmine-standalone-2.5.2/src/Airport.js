@@ -18,3 +18,8 @@ Airport.prototype.isFull = function () {
 Airport.prototype.land = function (plane) {
   this.plane_array.push(plane);
 };
+
+
+Airport.prototype.takeOff = function (plane) {
+  this.plane_array.pop(plane);
+};
